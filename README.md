@@ -6,22 +6,9 @@ Then you likely have felt an irrepressible urge to flip tables.
 
 Table-flip is a custom Linux shell prompt that lets your shell express your rage for you.
 
-```sh
-( ･_･)    ┳━┳ $ false
-(╯°□°）╯︵┻━┻ $ false
-(╯°□°）╯︵┻━┻ $ false
-(╯°□°）╯︵┻━┻ $ false
-(╯°□°）╯︵┻━┻ $ false
-(╯°□°）╯︵┻━┻ $ false
-(╯°□°）╯︵┻━┻ $ true
-(╯°□°）╯︵┻━┻ $ true
-(╯°□°）╯︵┻━┻ $ true
-(╯°□°）╯︵┻━┻ $ true
-(╯°□°）╯︵┻━┻ $ true
-(╯°□°）╯︵┻━┻ $ true
-(ヘ･_･)ヘ ┳━┳ $ true
-( ･_･)    ┳━┳ $ 
-```
+The following happened spontaneously as I was preparing this Git repository:
+
+![First productive usage ever](./img/first-productive-usage-ever.png)
 
 ## Installation
 
