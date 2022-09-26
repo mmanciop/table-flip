@@ -43,9 +43,29 @@ __prompt_command() {
         let "FlipLevel = ${#FlipLevels[@]} - 1"
     fi
 
-    FlipPrompt="( ･_･)    ┳━┳"
     if (( ${FlipLevel} == 0 )) && (( ${FlipLevel} < ${OriginalFlipLevel} )); then
         FlipPrompt="(ヘ･_･)ヘ ┳━┳"
+    elif (( ${FlipLevel} == 0 )); then
+        case $((1 + $RANDOM % 6)) in
+        1)
+            FlipPrompt="( ･_･)    ┳━┳"
+            ;;
+        2)
+            FlipPrompt="(･_･ )    ┳━┳"
+            ;;
+        3)
+            FlipPrompt="(^_^ )    ┳━┳"
+            ;;
+        4)
+            FlipPrompt="( ^_^)    ┳━┳"
+            ;;
+        5)
+            FlipPrompt="(^_^ )♫♪  ┳━┳"
+            ;;
+        6)
+            FlipPrompt="( ^_^)♪♫  ┳━┳"
+            ;;
+        esac
     elif (( ${FlipLevel} > 0 )); then
         FlipPrompt="\[\e[1;${FlipLevels[${FlipLevel}]}m\](╯°□°）╯${RCol}︵┻━┻"
     fi
